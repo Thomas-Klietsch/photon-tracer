@@ -19,10 +19,10 @@ namespace Sample
 		Random::Mersenne& prng
 	)
 	{
-		std::float_t const theta = two_pi * prng.get_float();
+		std::float_t const phi = two_pi * prng.get_float();
 		std::float_t const z = prng.get_float();
 		std::float_t const radius = std::sqrt( 1.f - z );
-		return Double3( std::cos( theta ) * radius, std::sin( theta ) * radius, std::sqrt( z ) );
+		return Double3( std::cos( phi ) * radius, std::sin( phi ) * radius, std::sqrt( z ) );
 	};
 
 };
